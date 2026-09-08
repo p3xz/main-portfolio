@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://namishyadav.dev'),
+  metadataBase: new URL('https://namishhh.vercel.app'),
   title: {
     default: 'Namish Yadav',
     template: '%s | Namish Yadav',
