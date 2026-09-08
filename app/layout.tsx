@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://namishyadav.dev',
-    title: 'Namish Yadav',
+    title: 'Namish Yadav | Software Engineer',
     description: 'Full-stack software engineer specializing in TypeScript, Next.js, Java, Python, and scalable backend architecture.',
     siteName: 'Namish Yadav',
   },
