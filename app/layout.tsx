@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://namishyadav.dev'),
   title: {
-    default: 'Namish Yadav | Software Engineer',
+    default: 'Namish Yadav',
     template: '%s | Namish Yadav',
   },
   description: 'Full-stack software engineer specializing in TypeScript, Next.js, Java, Python, and scalable backend architecture.',
