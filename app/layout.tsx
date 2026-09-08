@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://namishyadav.dev',
-    title: 'Namish Yadav | Software Engineer',
+    url: 'https://namishhh.vercel.app',
+    title: 'Namish Yadav',
     description: 'Full-stack software engineer specializing in TypeScript, Next.js, Java, Python, and scalable backend architecture.',
     siteName: 'Namish Yadav',
   },
