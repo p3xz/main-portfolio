@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://namishyadav.dev'),
+  metadataBase: new URL('https://namishhh.vercel.app'),
   title: {
-    default: 'Namish Yadav | Software Engineer',
+    default: 'Namish Yadav',
     template: '%s | Namish Yadav',
   },
   description: 'Full-stack software engineer specializing in TypeScript, Next.js, Java, Python, and scalable backend architecture.',
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://namishyadav.dev',
-    title: 'Namish Yadav | Software Engineer',
+    url: 'https://namishhh.vercel.app',
+    title: 'Namish Yadav',
     description: 'Full-stack software engineer specializing in TypeScript, Next.js, Java, Python, and scalable backend architecture.',
     siteName: 'Namish Yadav',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Namish Yadav | Software Engineer',
+    title: 'Namish Yadav',
     description: 'Full-stack software engineer building scalable web applications and distributed systems.',
   },
   icons: {

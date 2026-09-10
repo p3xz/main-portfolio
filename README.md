@@ -1,8 +1,8 @@
-﻿# Namish Yadav — Portfolio
+﻿# Namish Yadav's  Portfolio
 
 A production-grade personal portfolio built with Next.js 16, React 19, TypeScript, and Tailwind CSS v4. The site showcases projects, technical background, and contact information with a focus on performance, accessibility, and clean architectural separation.
 
-Live at [https://namishyadav.dev](https://namishyadav.dev)
+Live at [https://namishhh.vercel.app](https://namishhh.vercel.app)
 
 ## Overview
 
