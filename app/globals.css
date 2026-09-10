@@ -79,7 +79,7 @@
 @layer base {
   html {
     color-scheme: dark;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
   }
   * {
     @apply border-border;

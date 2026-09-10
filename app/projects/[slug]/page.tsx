@@ -266,6 +266,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Link
                 href={`/projects/${prevProject.slug}`}
+                scroll={true}
                 className="group p-5 rounded-xl bg-white/[0.02] hover:bg-white/[0.05] border border-white/[0.08] hover:border-white/20 transition-colors"
               >
                 <span className="text-xs font-mono text-neutral-400 uppercase tracking-wider flex items-center gap-1.5 mb-1.5">
@@ -282,6 +283,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
 
               <Link
                 href={`/projects/${nextProject.slug}`}
+                scroll={true}
                 className="group p-5 rounded-xl bg-white/[0.02] hover:bg-white/[0.05] border border-white/[0.08] hover:border-white/20 transition-colors text-left sm:text-right"
               >
                 <span className="text-xs font-mono text-neutral-400 uppercase tracking-wider flex items-center sm:justify-end gap-1.5 mb-1.5">

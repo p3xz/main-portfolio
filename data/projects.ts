@@ -1,4 +1,4 @@
-export interface ProjectFeature {
+﻿export interface ProjectFeature {
   title: string;
   description: string;
 }
@@ -28,11 +28,11 @@ export const projects: Project[] = [
     title: "Brovxi",
     tagline: "Connected motorcycle telemetry, cockpit navigation engine, and GPS tracking system.",
     description: "A comprehensive telemetry ecosystem engineered for motorcyclists, combining an Expo React Native mobile tracker with MapLibre vector maps and offline SQLite logging, alongside a React 19 web cockpit featuring Spotify OAuth PKCE, radar alerts, and 6-axis IMU simulation.",
-    year: "2024",
+    year: "2026",
     category: "Mobile & Telemetry Infrastructure",
     role: "Lead Systems & Mobile Engineer",
     link: "/projects/brovxi",
-    liveUrl: "https://brovxi-seven.vercel.app",
+    liveUrl: "https://brovxi.vercel.app",
     githubUrl: "https://github.com/p3xz/brovxi",
     image: "/projects/brovxi.png",
     technologies: ["React Native", "Expo SDK", "MapLibre GL", "SQLite", "React 19", "Vite", "TypeScript", "GSAP", "Three.js / OGL", "Spotify Web API"],
@@ -46,7 +46,7 @@ export const projects: Project[] = [
       },
       {
         title: "Spotify Intercom Cockpit & Auto-Ducking",
-        description: "Speed-adaptive volume boost at highway speeds (≥100 km/h) and automatic audio ducking (-12dB) during radar speed trap warnings.",
+        description: "Speed-adaptive volume boost at highway speeds (â‰¥100 km/h) and automatic audio ducking (-12dB) during radar speed trap warnings.",
       },
       {
         title: "Post-Ride Telemetry & ETA Pace Delta",
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     title: "InsidCode",
     tagline: "Full-stack competitive programming platform with sandboxed multi-language execution.",
     description: "A high-performance LeetCode-style coding practice system featuring Monaco Editor, isolated remote code compilation via Piston API, hidden server-side test evaluation, OAuth authentication, streak tracking, and admin moderation.",
-    year: "2024",
+    year: "2026",
     category: "Full-Stack Web & Sandboxed Execution",
     role: "Full Stack Architect",
     link: "/projects/insidcode",
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     title: "GymSync",
     tagline: "Premium offline-first fitness tracker with zero dependencies and deterministic workout logic.",
     description: "A modern Apple-inspired fitness tracking platform engineered in pure vanilla JavaScript, HTML5, and CSS3. Features automated workout-split resolution, offline LocalStorage persistence, expandable workout history, and micro-interaction animations.",
-    year: "2024",
+    year: "2026",
     category: "Client-Side Engineering & Offline Systems",
     role: "Lead Software Engineer",
     link: "/projects/gymsync",
@@ -121,7 +121,7 @@ export const projects: Project[] = [
     title: "GitHub Stats Discord Bot",
     tagline: "High-throughput Discord bot querying real-time GitHub activity via GraphQL and REST.",
     description: "A Java Discord bot built with JDA 5 and OkHttp that queries the GitHub GraphQL API v4 to generate interactive statistical embeds, yearly contribution metrics, language distribution breakdowns, and repo inspection via slash commands.",
-    year: "2024",
+    year: "2026",
     category: "Backend Engineering & API Systems",
     role: "Backend Engineer",
     link: "/projects/github-stats-bot",
@@ -151,11 +151,11 @@ export const projects: Project[] = [
     title: "Infernified",
     tagline: "Privacy-first client-side password security analyzer with k-anonymity breach detection.",
     description: "A client-side cybersecurity utility that performs mathematical entropy calculation, heuristic pattern detection, and Have I Been Pwned breach lookup using SHA-1 k-anonymity prefixes without ever exposing user credentials.",
-    year: "2024",
+    year: "2026",
     category: "Cybersecurity & Web Cryptography",
     role: "Security & Frontend Engineer",
     link: "/projects/infernified",
-    liveUrl: "https://p3xz.github.io/infernified/",
+    liveUrl: "https://infernified.vercel.app",
     githubUrl: "https://github.com/p3xz/infernified",
     image: "/projects/infernified.png",
     technologies: ["Vanilla JavaScript (ES2020+)", "Web Crypto API", "HTML5", "CSS3 Grid", "HIBP Pwned Passwords API", "K-Anonymity"],
@@ -178,3 +178,4 @@ export const projects: Project[] = [
     ],
   },
 ];
+

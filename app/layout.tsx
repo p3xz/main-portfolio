@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import ScrollRestorationFix from '@/components/ScrollRestorationFix'
 
 const geistSans = Geist({ 
   subsets: ["latin"],
@@ -62,6 +63,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} dark`}>
       <body className="font-sans antialiased bg-[#09090b] text-white min-h-screen">
+        <ScrollRestorationFix />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

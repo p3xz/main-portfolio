@@ -99,6 +99,7 @@ export function ProjectShowcase({ projects, className = "" }: ProjectShowcasePro
           <Link
             key={project.slug}
             href={`/projects/${project.slug}`}
+            scroll={true}
             className="group block relative py-8 px-4 -mx-4 rounded-xl hover:bg-white/[0.025] transition-colors focus-visible:outline-2 focus-visible:outline-white/40"
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
