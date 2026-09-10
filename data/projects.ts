@@ -116,4 +116,34 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    slug: "github-stats-bot",
+    title: "GitHub Stats Discord Bot",
+    tagline: "High-throughput Discord bot querying real-time GitHub activity via GraphQL and REST.",
+    description: "A Java Discord bot built with JDA 5 and OkHttp that queries the GitHub GraphQL API v4 to generate interactive statistical embeds, yearly contribution metrics, language distribution breakdowns, and repo inspection via slash commands.",
+    year: "2024",
+    category: "Backend Engineering & API Systems",
+    role: "Backend Engineer",
+    link: "/projects/github-stats-bot",
+    githubUrl: "https://github.com/p3xz/github-stats-bot",
+    image: "/projects/github-stats-bot.png",
+    technologies: ["Java 17", "JDA 5 (Java Discord API)", "Maven", "GitHub GraphQL API v4", "REST API", "OkHttp 4", "Gson"],
+    overview: "Engineered to deliver fast, rich developer activity insights directly within Discord servers. The bot registers native Discord application slash commands (/github profile, /github stats, /github repo, /langs) to fetch real-time public GitHub data with rate-limit resiliency and concurrent repository querying.",
+    architecture: "Built on Java 17 using JDA (Java Discord API) with an event-driven command listener architecture. Utilizes OkHttp with connection pooling to dispatch GraphQL queries for user contributions and concurrent REST calls for multi-repository language calculations, serialized into structured rich Discord embeds.",
+    decisions: "Adopted GitHub GraphQL API v4 rather than REST for user contribution graphs to retrieve commit, PR, issue, and star tallies across an entire 12-month window in a single round-trip, dramatically conserving API quotas.",
+    features: [
+      {
+        title: "GraphQL Contribution Aggregation",
+        description: "Queries contributionsCollection across a full 12-month calendar window to summarize commit streaks, merged PRs, and star totals.",
+      },
+      {
+        title: "Concurrent Language Distribution Analyzer",
+        description: "Fetches owned repository language byte statistics asynchronously and renders ASCII/Unicode progress bars representing exact percentage splits.",
+      },
+      {
+        title: "Rate-Limit Safe Architecture",
+        description: "Supports optional authenticated GitHub PAT integration with graceful fallback for unauthenticated Discord guild lookups.",
+      },
+    ],
+  },
 ];
