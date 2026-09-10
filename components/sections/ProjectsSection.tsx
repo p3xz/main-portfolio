@@ -19,7 +19,7 @@ export default function ProjectsSection() {
             </h2>
           </div>
           <p className="text-neutral-400 text-sm sm:text-base max-w-md leading-relaxed">
-            Case studies covering developer tools, real-time distributed state synchronization, and graphics pipelines.
+            Case studies covering motorcycle telemetry, sandboxed code execution, client-side offline engines, Discord bots, and cryptography.
           </p>
         </div>
 

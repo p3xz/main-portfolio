@@ -146,4 +146,35 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    slug: "infernified",
+    title: "Infernified",
+    tagline: "Privacy-first client-side password security analyzer with k-anonymity breach detection.",
+    description: "A client-side cybersecurity utility that performs mathematical entropy calculation, heuristic pattern detection, and Have I Been Pwned breach lookup using SHA-1 k-anonymity prefixes without ever exposing user credentials.",
+    year: "2024",
+    category: "Cybersecurity & Web Cryptography",
+    role: "Security & Frontend Engineer",
+    link: "/projects/infernified",
+    liveUrl: "https://p3xz.github.io/infernified/",
+    githubUrl: "https://github.com/p3xz/infernified",
+    image: "/projects/infernified.png",
+    technologies: ["Vanilla JavaScript (ES2020+)", "Web Crypto API", "HTML5", "CSS3 Grid", "HIBP Pwned Passwords API", "K-Anonymity"],
+    overview: "Infernified is an educational password vulnerability analyzer built around zero-trust client privacy. Rather than transmitting raw passwords or full hashes to third-party verification servers, all analysis is performed locally in the browser, with external breach checking restricted strictly to mathematical 5-character SHA-1 prefix ranges.",
+    architecture: "Engineered using native Web Crypto API (SubtleCrypto) to generate SHA-1 digests locally. The first 5 hexadecimal characters are transmitted to the Have I Been Pwned Pwned Passwords range API, which returns hundreds of matching hash suffixes that are then compared locally against the remainder of the client hash.",
+    decisions: "Adopted k-anonymity range lookups to make it mathematically impossible for any intermediate observer or the HIBP API itself to reconstruct the analyzed password. Relies exclusively on crypto.getRandomValues() for cryptographically unguessable password generation rather than pseudo-random generators.",
+    features: [
+      {
+        title: "K-Anonymity Breach Verification",
+        description: "Transmits only a 5-character hash prefix to HIBP, downloading hash suffix candidates and performing the match calculation entirely inside the browser.",
+      },
+      {
+        title: "Deterministic Entropy & Pattern Scorer",
+        description: "Computes pool-based Shannon entropy approximations and evaluates sequential digits, keyboard paths, and repeated substring patterns.",
+      },
+      {
+        title: "Cryptographic Password Generator",
+        description: "Generates custom entropy-balanced character sequences using the browser's native crypto.getRandomValues() system API.",
+      },
+    ],
+  },
 ];
