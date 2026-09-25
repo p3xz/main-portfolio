@@ -17,17 +17,17 @@ const skillCategories = [
   {
     name: "Backend & Systems",
     icon: Server,
-    items: ["Java", "C" , "Python", "Node.js", "REST APIs", "WebSocket", "FastAPI"],
+    items: ["Node.js", "REST APIs"],
   },
   {
     name: "Databases & Storage",
     icon: Database,
-    items: ["PostgreSQL", "SQL", "Redis"],
+    items: ["MongoDB"],
   },
   {
     name: "DevOps & Tooling",
     icon: Code2,
-    items: ["Git", "GitHub", "Docker", "VS Code", "Vercel", "Linux"],
+    items: ["Git", "GitHub", "VS Code", "Vercel"],
   },
 ];
 
@@ -84,7 +84,7 @@ export default function AboutSection() {
             <div className="relative w-full max-w-[280px] sm:max-w-[320px] aspect-square rounded-xl overflow-hidden border border-white/10 bg-white/[0.02] shadow-lg">
               <Image
                 src="/pfp.jpg"
-                alt="Namish Yadav - Software Engineer"
+                alt="Namish Yadav"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 320px"
@@ -94,7 +94,7 @@ export default function AboutSection() {
             <div className="space-y-2">
               <h3 className="text-xl font-bold text-white">Namish Yadav</h3>
               <p className="text-sm text-neutral-400">
-                Full-Stack Software Engineer specializing in modern web infrastructure, distributed services, and accessible interfaces.
+                BCA student learning full-stack development by building real projects.
               </p>
             </div>
           </div>
@@ -104,10 +104,10 @@ export default function AboutSection() {
             {/* Bio */}
             <div className="space-y-4 text-neutral-300 text-sm sm:text-base leading-relaxed">
               <p>
-                I am a software engineer focused on building resilient web applications and backend systems. With practical experience across Java, Python, TypeScript, and modern relational databases, I prioritize writing clean, type-safe code that delivers measurable performance.
+                I'm an 18-year-old BCA student learning software engineering by building real projects. My working stack is TypeScript, Next.js, Tailwind CSS, and MongoDB. I care about clean, type-safe code and understanding every layer of what I ship.
               </p>
               <p className="text-neutral-400">
-                My approach emphasizes clean architecture, low-latency API design, and intuitive user experiences. I actively build open-source tools and stay deeply engaged with modern web standards and systems design patterns.
+                Right now I'm focused on fundamentals done right: how frontends talk to APIs, how data is modeled and validated, and how to keep interfaces fast and simple. I document what I learn in public.
               </p>
             </div>
 
