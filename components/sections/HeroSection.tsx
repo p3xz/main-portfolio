@@ -66,19 +66,17 @@ export default function HeroSection() {
             {/* Status Pill */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 w-fit text-xs text-neutral-300 font-medium">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              <span>Available for Software Engineering Roles</span>
+              <span>Open to Software Engineering Internships</span>
             </div>
 
             {/* Clear Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.08]">
-              Software Engineer building performant web applications and distributed systems.
+              BCA student building full-stack web applications.
             </h1>
 
             {/* Description */}
             <p className="text-neutral-400 text-base sm:text-lg leading-relaxed max-w-xl">
-              I design and develop robust full-stack software using{' '}
-              <span className="text-neutral-200 font-medium">TypeScript, Next.js, Java, Python, and SQL</span>,
-              combining clean architectural principles with modern frontend craft.
+              I build full-stack projects with TypeScript, Next.js, and MongoDB, learning clean architecture and modern frontend craft as I go.
             </p>
 
             {/* Action Buttons */}
