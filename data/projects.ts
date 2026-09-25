@@ -1,4 +1,4 @@
-﻿export interface ProjectFeature {
+export interface ProjectFeature {
   title: string;
   description: string;
 }
@@ -25,15 +25,15 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: "brovxi",
-    title: "Brovxi",
+    title: "Rideoxy",
     tagline: "Connected motorcycle telemetry, cockpit navigation engine, and GPS tracking system.",
     description: "A comprehensive telemetry ecosystem engineered for motorcyclists, combining an Expo React Native mobile tracker with MapLibre vector maps and offline SQLite logging, alongside a React 19 web cockpit featuring Spotify OAuth PKCE, radar alerts, and 6-axis IMU simulation.",
     year: "2026",
     category: "Mobile & Telemetry Infrastructure",
-    role: "Lead Systems & Mobile Engineer",
+    role: "Solo Developer",
     link: "/projects/brovxi",
     liveUrl: "https://brovxi.vercel.app",
-    githubUrl: "https://github.com/p3xz/brovxi",
+    githubUrl: "https://github.com/p3xz/rideoxy",
     image: "/projects/brovxi.png",
     technologies: ["React Native", "Expo SDK", "MapLibre GL", "SQLite", "React 19", "Vite", "TypeScript", "GSAP", "Three.js / OGL", "Spotify Web API"],
     overview: "Brovxi was built around real motorcycle dynamics to solve the challenge of accurate two-wheeled riding telemetry and audio control. It combines a privacy-first mobile tracker running high-frequency GPS logging with SQLite storage, and a browser-based cockpit engine integrating speed-adaptive audio ducking, lean angle HUD simulation, and post-ride ETA pace delta analytics.",
@@ -46,7 +46,7 @@ export const projects: Project[] = [
       },
       {
         title: "Spotify Intercom Cockpit & Auto-Ducking",
-        description: "Speed-adaptive volume boost at highway speeds (â‰¥100 km/h) and automatic audio ducking (-12dB) during radar speed trap warnings.",
+        description: "Speed-adaptive volume boost at highway speeds (≥100 km/h) and automatic audio ducking (-12dB) during radar speed trap warnings.",
       },
       {
         title: "Post-Ride Telemetry & ETA Pace Delta",
@@ -58,15 +58,15 @@ export const projects: Project[] = [
     slug: "insidcode",
     title: "InsidCode",
     tagline: "Full-stack competitive programming platform with sandboxed multi-language execution.",
-    description: "A high-performance LeetCode-style coding practice system featuring Monaco Editor, isolated remote code compilation via Piston API, hidden server-side test evaluation, OAuth authentication, streak tracking, and admin moderation.",
+    description: "A high-performance LeetCode-style coding practice system featuring Monaco Editor, isolated remote code compilation via OnlineCompiler API, hidden server-side test evaluation, OAuth authentication, streak tracking, and admin moderation.",
     year: "2026",
     category: "Full-Stack Web & Sandboxed Execution",
-    role: "Full Stack Architect",
+    role: "Solo Developer",
     link: "/projects/insidcode",
     liveUrl: "https://insidcode.vercel.app",
     githubUrl: "https://github.com/p3xz/insidcode",
     image: "/projects/insidcode.png",
-    technologies: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "MongoDB Atlas", "NextAuth.js", "Monaco Editor", "Piston API", "Zod"],
+    technologies: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "MongoDB Atlas", "NextAuth.js", "Monaco Editor", "OnlineCompiler API", "Zod"],
     overview: "InsidCode was engineered to give developers a distraction-free environment to master programming logic, recursion, arrays, and algorithms before diving into advanced data structures. It features full multi-language code compilation (Python, JavaScript, C, C++, Java) evaluated in an isolated sandbox against server-side hidden test cases.",
     architecture: "Built with Next.js App Router and cached Mongoose connection pools for serverless MongoDB Atlas clusters. Code execution requests are dispatched through sliding-window rate limiters to a sandboxed Piston execution node. Submissions are processed sequentially against hidden test assertions that are strictly projected out of client responses.",
     decisions: "Eliminated client-side test evaluation to safeguard test inputs and solutions against inspection. Chose NextAuth OAuth (Google & GitHub) paired with role-based middleware guards to eliminate password liability while enabling secure admin user moderation and problem management.",
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     description: "A modern Apple-inspired fitness tracking platform engineered in pure vanilla JavaScript, HTML5, and CSS3. Features automated workout-split resolution, offline LocalStorage persistence, expandable workout history, and micro-interaction animations.",
     year: "2026",
     category: "Client-Side Engineering & Offline Systems",
-    role: "Lead Software Engineer",
+    role: "Solo Developer",
     link: "/projects/gymsync",
     liveUrl: "https://p3xz.github.io/gymsyncs/",
     githubUrl: "https://github.com/p3xz/gymsyncs",
@@ -123,7 +123,7 @@ export const projects: Project[] = [
     description: "A Java Discord bot built with JDA 5 and OkHttp that queries the GitHub GraphQL API v4 to generate interactive statistical embeds, yearly contribution metrics, language distribution breakdowns, and repo inspection via slash commands.",
     year: "2026",
     category: "Backend Engineering & API Systems",
-    role: "Backend Engineer",
+    role: "Solo Developer",
     link: "/projects/github-stats-bot",
     githubUrl: "https://github.com/p3xz/github-stats-bot",
     image: "/projects/github-stats-bot.png",
@@ -153,7 +153,7 @@ export const projects: Project[] = [
     description: "A client-side cybersecurity utility that performs mathematical entropy calculation, heuristic pattern detection, and Have I Been Pwned breach lookup using SHA-1 k-anonymity prefixes without ever exposing user credentials.",
     year: "2026",
     category: "Cybersecurity & Web Cryptography",
-    role: "Security & Frontend Engineer",
+    role: "Solo Developer",
     link: "/projects/infernified",
     liveUrl: "https://infernified.vercel.app",
     githubUrl: "https://github.com/p3xz/infernified",
@@ -178,4 +178,3 @@ export const projects: Project[] = [
     ],
   },
 ];
-
