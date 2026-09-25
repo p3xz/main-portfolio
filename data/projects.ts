@@ -177,4 +177,35 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    slug: "mincratype",
+    title: "MINCRATYPE",
+    tagline: "Minecraft-themed typing test with a blocky on-screen keyboard that lights up as you type.",
+    description: "A playful typing test wrapped in a Minecraft aesthetic. Pick a timer, mine words with your keyboard, and watch a blocky on-screen keyboard slide up and depress in sync with your physical keys. Tracks WPM, accuracy, and consistency with per-mode personal bests saved locally.",
+    year: "2026",
+    category: "Web Games & Interaction Design",
+    role: "Solo Developer",
+    link: "/projects/mincratype",
+    liveUrl: "https://mincratype.vercel.app",
+    githubUrl: "https://github.com/p3xz/mincratype",
+    image: "/projects/mincratype.png",
+    technologies: ["React 19", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "LocalStorage API"],
+    overview: "MINCRATYPE was built to make typing practice feel like a game instead of a chore. It takes the familiar monkeytype-style test loop and wraps it in blocky Minecraft-inspired visuals, with a full on-screen keyboard that mirrors every keystroke. The game is a fan-made parody concept and is not affiliated with Mojang or Microsoft.",
+    architecture: "A React 19 single-page app built with Vite. The test engine runs on window-level keydown and keyup listeners, drawing words from a curated list and scoring each keystroke as correct, incorrect, extra, or missed. The on-screen keyboard is driven by the same listeners, so visual keys depress in exact sync with the physical keyboard, and keys are also clickable for touch devices.",
+    decisions: "Kept everything client-side with no backend so the test starts instantly and works offline after load. Used monkeytype's consistency formula so scores feel comparable to what serious typists already know. Stored personal bests per timer mode in localStorage instead of accounts, keeping the game friction-free.",
+    features: [
+      {
+        title: "Synced Blocky On-Screen Keyboard",
+        description: "A full keyboard slides up on the first keystroke and mirrors the physical keyboard in real time, with clickable keys for touch play.",
+      },
+      {
+        title: "Real Typing Metrics",
+        description: "WPM, raw WPM, accuracy, and monkeytype-style consistency, with per-second breakdowns and per-mode personal bests.",
+      },
+      {
+        title: "Timer Modes & Instant Restart",
+        description: "15, 30, 60, and 120 second modes. The timer starts on first keystroke and Tab restarts instantly at any moment.",
+      },
+    ],
+  },
 ];
