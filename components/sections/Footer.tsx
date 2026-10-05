@@ -1,7 +1,7 @@
 'use client';
 
 import Link from "next/link";
-import { Github, Linkedin, Mail, Instagram, ArrowUp } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram, Globe, ArrowUp } from "lucide-react";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -26,6 +26,9 @@ export default function Footer() {
           <p className="text-xs text-neutral-400">
             © {new Date().getFullYear()} Namish Yadav. All rights reserved.
           </p>
+          <Link href="/privacy" className="text-xs text-neutral-500 hover:text-white transition-colors">
+            Privacy Policy
+          </Link>
         </div>
 
         {/* Center/Right: Social & Back to Top */}
@@ -41,13 +44,23 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/namish-yadav-639769408/"
+            href="https://linkedin.com/in/namish-yadav-639769408"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-md text-neutral-400 hover:text-white hover:bg-white/[0.05] transition-colors"
             aria-label="LinkedIn Profile"
           >
             <Linkedin className="w-4 h-4" />
+          </a>
+
+          <a
+            href="https://namishhh.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-md text-neutral-400 hover:text-white hover:bg-white/[0.05] transition-colors"
+            aria-label="Portfolio Website"
+          >
+            <Globe className="w-4 h-4" />
           </a>
 
           <a
