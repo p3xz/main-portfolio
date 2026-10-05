@@ -45,7 +45,7 @@ export default function ContactPage() {
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
         // Fallback directly to FormSubmit
-        const fallbackRes = await fetch("https://formsubmit.co/ajax/nam4sh@gmail.com", {
+        const fallbackRes = await fetch("https://formsubmit.co/ajax/namishyadavv@gmail.com", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -231,10 +231,10 @@ export default function ContactPage() {
                   <p className="text-neutral-400">
                     You can send your message directly via your email client to{" "}
                     <a
-                      href={`mailto:nam4sh@gmail.com?subject=${encodeURIComponent(formData.subject || "Portfolio Contact")}&body=${encodeURIComponent(formData.message)}`}
+                      href={`mailto:namishyadavv@gmail.com?subject=${encodeURIComponent(formData.subject || "Portfolio Contact")}&body=${encodeURIComponent(formData.message)}`}
                       className="text-white underline hover:text-neutral-200 transition-colors"
                     >
-                      nam4sh@gmail.com
+                      namishyadavv@gmail.com
                     </a>
                     .
                   </p>
@@ -250,11 +250,11 @@ export default function ContactPage() {
 
               <div className="flex flex-wrap items-center justify-center gap-2.5">
                 <a
-                  href="mailto:nam4sh@gmail.com"
+                  href="mailto:namishyadavv@gmail.com"
                   className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 text-neutral-300 hover:text-white text-xs transition-colors"
                 >
                   <Mail className="w-3.5 h-3.5" />
-                  nam4sh@gmail.com
+                  namishyadavv@gmail.com
                 </a>
 
                 <a

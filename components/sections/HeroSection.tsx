@@ -118,7 +118,7 @@ export default function HeroSection() {
                 </a>
 
                 <a
-                  href="mailto:nam4sh@gmail.com"
+                  href="mailto:namishyadavv@gmail.com"
                   className="p-2.5 rounded-md text-neutral-400 hover:text-white hover:bg-white/[0.05] transition-colors focus-visible:outline-2 focus-visible:outline-white/40"
                   aria-label="Send Email"
                 >

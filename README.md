@@ -129,4 +129,4 @@ Namish Yadav
 - GitHub: https://github.com/p3xz
 - LinkedIn: https://www.linkedin.com/in/namish-yadav-639769408/
 - Instagram: https://instagram.com/nam7sh
-- Email: nam4sh@gmail.com
+- Email: namishyadavv@gmail.com

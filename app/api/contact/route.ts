@@ -12,8 +12,8 @@ export async function POST(req: Request) {
       );
     }
 
-    // Forward to FormSubmit for direct email delivery to nam4sh@gmail.com
-    const response = await fetch("https://formsubmit.co/ajax/nam4sh@gmail.com", {
+    // Forward to FormSubmit for direct email delivery to namishyadavv@gmail.com
+    const response = await fetch("https://formsubmit.co/ajax/namishyadavv@gmail.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -14,7 +14,7 @@ const SECTIONS = [
     title: "What this site collects",
     body: [
       "This is a personal portfolio. It has no user accounts, no sign-in, and no comment system. It does not track you across the web.",
-      "The contact form asks for your name, email address, and message. When you submit it, that information is forwarded to nam4sh@gmail.com so I can reply. It is transmitted through FormSubmit, a third-party email forwarding service, and is not stored in a database I control.",
+      "The contact form asks for your name, email address, and message. When you submit it, that information is forwarded to namishyadavv@gmail.com so I can reply. It is transmitted through FormSubmit, a third-party email forwarding service, and is not stored in a database I control.",
     ],
   },
   {
@@ -39,7 +39,7 @@ const SECTIONS = [
   {
     title: "Contact",
     body: [
-      "If you have questions about this policy, email nam4sh@gmail.com.",
+      "If you have questions about this policy, email namishyadavv@gmail.com.",
     ],
   },
 ];
