@@ -33,9 +33,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: ProjectPageProps) {
   const { slug } = await params;
   const project = projects.find((p) => p.slug === slug);
-  if (!project) return { title: 'Project Not Found | Namish Yadav' };
+  if (!project) return { title: 'Project Not Found' };
   return {
-    title: `${project.title} | Case Study | Namish Yadav`,
+    title: `${project.title} | Case Study`,
     description: project.description,
   };
 }

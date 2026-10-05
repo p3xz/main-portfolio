@@ -504,7 +504,7 @@ const MagicBento = ({
                     rel="noopener noreferrer"
                     className="magic-bento-card__link"
                   >
-                    View Project →
+                    View Project
                   </a>
                 )}
               </div>

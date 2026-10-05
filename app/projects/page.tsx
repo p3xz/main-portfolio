@@ -9,7 +9,7 @@ import GlobalBackground from '@/components/GlobalBackground';
 import SmoothScroll from '@/components/SmoothScroll';
 
 export const metadata = {
-  title: 'Projects | Namish Yadav',
+  title: 'Projects',
   description: 'Selected engineering projects, full-stack web applications, and developer tools by Namish Yadav.',
 };
 
