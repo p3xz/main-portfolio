@@ -188,7 +188,7 @@ export const projects: Project[] = [
     link: "/projects/mincratype",
     liveUrl: "https://mincratype.vercel.app",
     githubUrl: "https://github.com/p3xz/mincratype",
-    image: "/projects/mincratype.png",
+    image: "/projects/mincratype.webp",
     technologies: ["React 19", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "LocalStorage API"],
     overview: "MINCRATYPE was built to make typing practice feel like a game instead of a chore. It takes the familiar monkeytype-style test loop and wraps it in blocky Minecraft-inspired visuals, with a full on-screen keyboard that mirrors every keystroke. The game is a fan-made parody concept and is not affiliated with Mojang or Microsoft.",
     architecture: "A React 19 single-page app built with Vite. The test engine runs on window-level keydown and keyup listeners, drawing words from a curated list and scoring each keystroke as correct, incorrect, extra, or missed. The on-screen keyboard is driven by the same listeners, so visual keys depress in exact sync with the physical keyboard, and keys are also clickable for touch devices.",
