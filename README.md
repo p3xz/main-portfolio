@@ -2,6 +2,8 @@
 
 > A production-grade personal portfolio site showcasing projects, technical background, and contact information, built to replace a static page with a fully interactive, easily updatable site.
 
+![Preview](preview.png)
+
 ![Status](https://img.shields.io/badge/status-active-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
 
 Live at [https://namishhh.vercel.app](https://namishhh.vercel.app)
