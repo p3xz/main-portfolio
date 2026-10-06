@@ -1,30 +1,20 @@
-﻿# Namish Yadav's  Portfolio
+# Namish Yadav's Portfolio
+
+## What
 
 A production-grade personal portfolio built with Next.js 16, React 19, TypeScript, and Tailwind CSS v4. The site showcases projects, technical background, and contact information with a focus on performance, accessibility, and clean architectural separation.
 
 Live at [https://namishhh.vercel.app](https://namishhh.vercel.app)
 
-## Overview
+## Why
 
-The portfolio is a single-page application rendered through Next.js App Router with full TypeScript coverage. It features scroll-driven GSAP animations, a WebGL wireframe visual component powered by OGL, smooth scroll via Lenis, and a custom bubble navigation menu. All animations respect the `prefers-reduced-motion` media query.
+Built as a personal portfolio site to present projects, technical background, and contact information in one place, replacing a static page with a fully interactive, easily updatable site.
 
-The project is designed for easy content updates: projects are defined in a single typed data file and all personal information is centralized in layout metadata and section components.
+## When
 
-## Features
+Built in September 2026.
 
-- Hero section with GSAP staggered entry animation and a WebGL wireframe sphere (OGL)
-- About section with scroll-triggered skill category cards and a technical biography
-- Projects section with individual project detail pages generated via Next.js dynamic routing
-- Contact page with a working API route for email form submission
-- Bubble navigation menu with smooth snap behavior
-- Global dark background with a subtle dot-grid pattern and vignette effect
-- Smooth page scrolling via Lenis
-- Full Vercel Analytics integration in production
-- Open Graph and Twitter card metadata for social sharing
-- Accessible markup with ARIA labels, semantic HTML, and visible focus states
-- Responsive layout for mobile, tablet, and desktop viewports
-
-## Tech Stack
+## What we used
 
 | Layer | Technology |
 |---|---|
@@ -40,26 +30,61 @@ The project is designed for easy content updates: projects are defined in a sing
 | Analytics | Vercel Analytics |
 | Deployment | Vercel |
 
+## Why we used this
+
+- Next.js (App Router): server rendering and SEO support for a public portfolio, including Open Graph metadata, a sitemap, and robots.txt.
+- React 19 with TypeScript: component-based UI with full type coverage across sections and the project data file.
+- Tailwind CSS v4: utility-first styling for the dark theme, dot-grid background, and responsive layout.
+- GSAP with ScrollTrigger: scroll-driven entrance and section animations.
+- OGL and Three.js: the WebGL wireframe sphere rendered in the hero section.
+- Lenis: smooth scrolling across the single-page layout.
+- Radix UI and Lucide React: accessible component primitives and icons.
+- Vercel: one-click deployment with Vercel Analytics built in.
+
+## How it works
+
+- The site is a single-page application composed in `app/page.tsx` from section components (hero, about, projects, footer) wrapped in a shared root layout.
+- Projects are defined once in a typed data file (`data/projects.ts`); individual project detail pages are generated via Next.js dynamic routing at `app/projects/[slug]`.
+- The contact form posts to an API route that handles email submission server-side.
+- The hero renders a WebGL wireframe sphere with OGL, while GSAP ScrollTrigger drives scroll-based section animations; all animations respect the `prefers-reduced-motion` media query.
+- A bubble navigation menu provides floating navigation with smooth snap behavior, and Lenis supplies smooth page scrolling.
+- SEO is handled in the root layout with Open Graph and Twitter card metadata, plus generated `sitemap.ts` and `robots.ts`.
+
+## Features
+
+- Hero section with GSAP staggered entry animation and a WebGL wireframe sphere (OGL)
+- About section with scroll-triggered skill category cards and a technical biography
+- Projects section with individual project detail pages generated via Next.js dynamic routing
+- Contact page with a working API route for email form submission
+- Bubble navigation menu with smooth snap behavior
+- Global dark background with a subtle dot-grid pattern and vignette effect
+- Smooth page scrolling via Lenis
+- Full Vercel Analytics integration in production
+- Open Graph and Twitter card metadata for social sharing
+- Accessible markup with ARIA labels, semantic HTML, and visible focus states
+- Responsive layout for mobile, tablet, and desktop viewports
+
 ## Project Structure
 
 ```
-portfolio/
+main-portfolio/
 ├── app/
-│   ├── page.tsx              # Root page — composes all sections
+│   ├── page.tsx              # Root page: composes all sections
 │   ├── layout.tsx            # Root layout, metadata, fonts, analytics
 │   ├── globals.css           # Global styles and CSS variables
 │   ├── contact/              # Contact page with email form
-│   └── projects/[slug]/      # Dynamic project detail pages
+│   ├── projects/[slug]/      # Dynamic project detail pages
+│   ├── api/                  # Server API routes (contact email)
+│   ├── privacy/              # Privacy policy page
+│   ├── robots.ts             # Generated robots.txt
+│   └── sitemap.ts            # Generated sitemap
 ├── components/
-│   ├── sections/
-│   │   ├── HeroSection.tsx   # Headline, CTA buttons, social links, WebGL ball
-│   │   ├── AboutSection.tsx  # Bio, portrait, skill category grid
-│   │   ├── ProjectsSection.tsx
-│   │   └── Footer.tsx        # Copyright, social links, scroll-to-top
+│   ├── sections/             # Hero, about, projects, footer sections
 │   ├── BubbleMenu.tsx        # Floating navigation menu
 │   ├── SmoothScroll.tsx      # Lenis scroll provider
 │   ├── WireframeBall.tsx     # OGL WebGL wireframe sphere
-│   └── GlobalBackground.tsx  # Dot-grid pattern and vignette
+│   ├── GlobalBackground.tsx  # Dot-grid pattern and vignette
+│   └── ...                   # Additional visual and UI components
 ├── data/
 │   └── projects.ts           # Typed project definitions (slug, stack, features)
 ├── hooks/                    # Custom React hooks
@@ -74,8 +99,8 @@ Prerequisites: Node.js 20 or higher, npm or pnpm.
 Clone the repository:
 
 ```bash
-git clone https://github.com/p3xz/portfolio.git
-cd portfolio
+git clone https://github.com/p3xz/main-portfolio.git
+cd main-portfolio
 ```
 
 Install dependencies:
@@ -122,9 +147,9 @@ For other platforms, run `npm run build` and serve the `.next` output with `npm 
 
 MIT License
 
-## Developer
+## Credits
 
-Namish Yadav
+Built by Namish Yadav.
 
 - GitHub: https://github.com/p3xz
 - LinkedIn: https://www.linkedin.com/in/namish-yadav-639769408/
