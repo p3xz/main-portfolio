@@ -16,6 +16,8 @@ Built in September 2026.
 
 ## What we used
 
+![TypeScript](https://skillicons.dev/icons?i=ts) ![Next.js](https://skillicons.dev/icons?i=nextjs) ![React](https://skillicons.dev/icons?i=react) ![Tailwind CSS](https://skillicons.dev/icons?i=tailwind) ![Three.js](https://skillicons.dev/icons?i=threejs) ![Vercel](https://skillicons.dev/icons?i=vercel)
+
 | Layer | Technology |
 |---|---|
 | Framework | Next.js 16 (App Router) |
