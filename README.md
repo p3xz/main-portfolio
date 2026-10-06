@@ -1,20 +1,26 @@
-# Namish Yadav's Portfolio
+# Main Portfolio
 
-## What
+> A production-grade personal portfolio site showcasing projects, technical background, and contact information, built to replace a static page with a fully interactive, easily updatable site.
 
-A production-grade personal portfolio built with Next.js 16, React 19, TypeScript, and Tailwind CSS v4. The site showcases projects, technical background, and contact information with a focus on performance, accessibility, and clean architectural separation.
+![Status](https://img.shields.io/badge/status-active-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
 
 Live at [https://namishhh.vercel.app](https://namishhh.vercel.app)
 
-## Why
+## Features
 
-Built as a personal portfolio site to present projects, technical background, and contact information in one place, replacing a static page with a fully interactive, easily updatable site.
+- **Hero section**: GSAP staggered entry animation with a WebGL wireframe sphere rendered in OGL.
+- **About section**: scroll-triggered skill category cards and a technical biography.
+- **Projects section**: individual project detail pages generated via Next.js dynamic routing.
+- **Contact page**: working form posting to a server-side API route for email submission.
+- **Bubble navigation**: floating menu with smooth snap behavior.
+- **Dark theme**: global dark background with a subtle dot-grid pattern and vignette effect.
+- **Smooth scrolling**: Lenis-powered smooth page scrolling across the single-page layout.
+- **Analytics**: full Vercel Analytics integration in production.
+- **SEO**: Open Graph and Twitter card metadata for social sharing, plus a generated sitemap and robots.txt.
+- **Accessibility**: semantic HTML with ARIA labels and visible focus states; all animations respect the `prefers-reduced-motion` media query.
+- **Responsive**: layouts for mobile, tablet, and desktop viewports.
 
-## When
-
-Built in September 2026.
-
-## What we used
+## Tech Stack
 
 ![TypeScript](https://skillicons.dev/icons?i=ts) ![Next.js](https://skillicons.dev/icons?i=nextjs) ![React](https://skillicons.dev/icons?i=react) ![Tailwind CSS](https://skillicons.dev/icons?i=tailwind) ![Three.js](https://skillicons.dev/icons?i=threejs) ![Vercel](https://skillicons.dev/icons?i=vercel)
 
@@ -32,7 +38,7 @@ Built in September 2026.
 | Analytics | Vercel Analytics |
 | Deployment | Vercel |
 
-## Why we used this
+**Why we used this:**
 
 - Next.js (App Router): server rendering and SEO support for a public portfolio, including Open Graph metadata, a sitemap, and robots.txt.
 - React 19 with TypeScript: component-based UI with full type coverage across sections and the project data file.
@@ -43,7 +49,7 @@ Built in September 2026.
 - Radix UI and Lucide React: accessible component primitives and icons.
 - Vercel: one-click deployment with Vercel Analytics built in.
 
-## How it works
+## How It Works
 
 - The site is a single-page application composed in `app/page.tsx` from section components (hero, about, projects, footer) wrapped in a shared root layout.
 - Projects are defined once in a typed data file (`data/projects.ts`); individual project detail pages are generated via Next.js dynamic routing at `app/projects/[slug]`.
@@ -51,20 +57,6 @@ Built in September 2026.
 - The hero renders a WebGL wireframe sphere with OGL, while GSAP ScrollTrigger drives scroll-based section animations; all animations respect the `prefers-reduced-motion` media query.
 - A bubble navigation menu provides floating navigation with smooth snap behavior, and Lenis supplies smooth page scrolling.
 - SEO is handled in the root layout with Open Graph and Twitter card metadata, plus generated `sitemap.ts` and `robots.ts`.
-
-## Features
-
-- Hero section with GSAP staggered entry animation and a WebGL wireframe sphere (OGL)
-- About section with scroll-triggered skill category cards and a technical biography
-- Projects section with individual project detail pages generated via Next.js dynamic routing
-- Contact page with a working API route for email form submission
-- Bubble navigation menu with smooth snap behavior
-- Global dark background with a subtle dot-grid pattern and vignette effect
-- Smooth page scrolling via Lenis
-- Full Vercel Analytics integration in production
-- Open Graph and Twitter card metadata for social sharing
-- Accessible markup with ARIA labels, semantic HTML, and visible focus states
-- Responsive layout for mobile, tablet, and desktop viewports
 
 ## Project Structure
 
@@ -94,32 +86,40 @@ main-portfolio/
 └── public/                   # Static assets (images, icons)
 ```
 
-## Getting Started
+## Quick Start
 
-Prerequisites: Node.js 20 or higher, npm or pnpm.
+### Prerequisites
 
-Clone the repository:
+- Node.js 20 or higher
+- npm or pnpm
+- Key versions used by this project: Next.js 16, React 19, TypeScript 5.7, Tailwind CSS v4
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/p3xz/main-portfolio.git
 cd main-portfolio
 ```
 
-Install dependencies:
+2. Install dependencies:
 
 ```bash
 npm install
 ```
 
-Run the development server:
+3. Run the development server:
 
 ```bash
 npm run dev
 ```
 
-Open `http://localhost:3000` in a browser.
+4. Open `http://localhost:3000` in a browser.
 
-Build for production:
+## Usage
+
+Build and serve the production site:
 
 ```bash
 npm run build
@@ -145,9 +145,13 @@ The project is configured for one-click deployment on Vercel. Connect the reposi
 
 For other platforms, run `npm run build` and serve the `.next` output with `npm start` or export to static files if server-side features are not required.
 
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
 ## License
 
-MIT License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Credits
 
