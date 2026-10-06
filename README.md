@@ -6,6 +6,8 @@
 
 Live at [https://namishhh.vercel.app](https://namishhh.vercel.app)
 
+Built in September 2026.
+
 ## Features
 
 - **Hero section**: GSAP staggered entry animation with a WebGL wireframe sphere rendered in OGL.
