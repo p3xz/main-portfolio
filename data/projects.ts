@@ -38,7 +38,7 @@ export const projects: Project[] = [
     technologies: ["React Native", "Expo SDK", "MapLibre GL", "SQLite", "React 19", "Vite", "TypeScript", "GSAP", "Three.js / OGL", "Spotify Web API"],
     overview: "Brovxi was built around real motorcycle dynamics to solve the challenge of accurate two-wheeled riding telemetry and audio control. It combines a privacy-first mobile tracker running high-frequency GPS logging with SQLite storage, and a browser-based cockpit engine integrating speed-adaptive audio ducking, lean angle HUD simulation, and post-ride ETA pace delta analytics.",
     architecture: "The native mobile client operates on Expo SDK and React Native with an asynchronous TaskManager pipeline performing background GPS filtering via Haversine distance heuristics directly to on-device SQLite tables. The companion web platform is built with React 19, Vite, and GSAP, leveraging Spotify PKCE OAuth to provide cockpit audio with speed camera auto-ducking.",
-    decisions: "Kept the mobile logging architecture 100% offline-first with zero mandatory cloud accounts or external telemetry telemetry leaks. Adopted MapLibre GL Native for fast vector map tile caching, and engineered Spotify PKCE authorization so riders can control cockpit music without hosting private developer keys.",
+    decisions: "Kept the mobile logging architecture 100% offline-first with zero mandatory cloud accounts or external telemetry leaks. Adopted MapLibre GL Native for fast vector map tile caching, and engineered Spotify PKCE authorization so riders can control cockpit music without hosting private developer keys.",
     features: [
       {
         title: "Precision GPS & Local SQLite Telemetry",
