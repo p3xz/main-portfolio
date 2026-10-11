@@ -94,7 +94,7 @@ export default function AboutSection() {
             <div className="space-y-2">
               <h3 className="text-xl font-bold text-white">Namish Yadav</h3>
               <p className="text-sm text-neutral-400">
-                BCA student learning full-stack development by building real projects.
+                Learning full-stack development by building real projects.
               </p>
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function AboutSection() {
             {/* Bio */}
             <div className="space-y-4 text-neutral-300 text-sm sm:text-base leading-relaxed">
               <p>
-                I'm an 18-year-old BCA student learning software engineering by building real projects. My working stack is TypeScript, Next.js, Tailwind CSS, and MongoDB. I care about clean, type-safe code and understanding every layer of what I ship.
+                I'm an 18-year-old learning software engineering by building real projects. My working stack is TypeScript, Next.js, Tailwind CSS, and MongoDB. I care about clean, type-safe code and understanding every layer of what I ship.
               </p>
               <p className="text-neutral-400">
                 Right now I'm focused on fundamentals done right: how frontends talk to APIs, how data is modeled and validated, and how to keep interfaces fast and simple. I document what I learn in public.

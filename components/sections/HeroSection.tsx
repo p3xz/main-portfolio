@@ -71,7 +71,7 @@ export default function HeroSection() {
 
             {/* Clear Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.08]">
-              BCA student building full-stack web applications.
+              I build things I want to use.
             </h1>
 
             {/* Description */}
