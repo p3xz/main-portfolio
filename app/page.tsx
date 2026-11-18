@@ -30,8 +30,10 @@ export default function Page() {
             <h1 className="text-5xl font-bold tracking-tighter sm:text-7xl md:text-8xl">
               Moving to another website
             </h1>
-            <p className="mt-4 text-lg text-muted-foreground sm:text-xl">
-              soon
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground sm:text-xl">
+              This page was only a placeholder. I rebuilt the portfolio from
+              scratch as a full scroll portfolio with real projects and case
+              studies, and an OS mode on the way, so I am moving there soon.
             </p>
           </div>
         </div>
