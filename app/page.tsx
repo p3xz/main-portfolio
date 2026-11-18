@@ -32,7 +32,8 @@ export default function Page() {
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground sm:text-xl">
               This page was only a placeholder. I rebuilt the portfolio from
-              scratch as a full scroll portfolio with real projects and case
+              scratch and switched frameworks, from Next.js to React with
+              Vite, as a full scroll portfolio with real projects and case
               studies, and an OS mode on the way, so I am moving there soon.
             </p>
           </div>
