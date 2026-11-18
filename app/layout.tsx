@@ -90,7 +90,7 @@ export default function RootLayout({
         />
         <ScrollRestorationFix />
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        <Analytics />
       </body>
     </html>
   )
