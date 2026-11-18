@@ -28,10 +28,10 @@ export default function Page() {
         <div className="flex h-full items-center justify-center px-6 text-center">
           <div>
             <h1 className="text-5xl font-bold tracking-tighter sm:text-7xl md:text-8xl">
-              We will be back soon
+              Moving to another website
             </h1>
             <p className="mt-4 text-lg text-muted-foreground sm:text-xl">
-              with a new update
+              soon
             </p>
           </div>
         </div>
