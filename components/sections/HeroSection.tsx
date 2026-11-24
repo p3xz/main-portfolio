@@ -108,7 +108,7 @@ export default function HeroSection() {
                 </a>
 
                 <a
-                  href="https://www.linkedin.com/in/namish-yadav-639769408/"
+                  href="https://www.linkedin.com/in/namishyadav/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2.5 rounded-md text-neutral-400 hover:text-white hover:bg-white/[0.05] transition-colors focus-visible:outline-2 focus-visible:outline-white/40"

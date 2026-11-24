@@ -77,7 +77,7 @@ export default function RootLayout({
     jobTitle: 'Full-Stack Software Engineer',
     sameAs: [
       'https://github.com/p3xz',
-      'https://linkedin.com/in/namish-yadav-639769408',
+      'https://linkedin.com/in/namishyadav',
       'https://instagram.com/nam7sh',
     ],
   }

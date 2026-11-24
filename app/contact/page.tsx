@@ -268,7 +268,7 @@ export default function ContactPage() {
                 </a>
 
                 <a
-                  href="https://www.linkedin.com/in/namish-yadav-639769408/"
+                  href="https://www.linkedin.com/in/namishyadav/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 text-neutral-300 hover:text-white text-xs transition-colors"

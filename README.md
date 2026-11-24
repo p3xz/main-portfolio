@@ -162,6 +162,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Built by Namish Yadav.
 
 - GitHub: https://github.com/p3xz
-- LinkedIn: https://www.linkedin.com/in/namish-yadav-639769408/
+- LinkedIn: https://www.linkedin.com/in/namishyadav/
 - Instagram: https://instagram.com/nam7sh
 - Email: namishyadavv@gmail.com
